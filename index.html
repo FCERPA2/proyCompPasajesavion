@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Compra de Pasajes Aéreos</title>
+        <link rel="stylesheet" type="text/css" href="/CSS/estilo.css">
+        <script src="JS/validaciones.js"></script>
+    </head>
+    <body>
+    <!-- inicio video background-->
+        <video autoplay muted loop id="VideoBackground">
+            <source src="IMG/videoAgenciaViajes.mp4" type="video/mp4">
+        </video>
+    <!--fin video background-->
+
+    <div class="content">
+        <h1>Compra de Pasajes Aéreos</h1>
+
+        <form id="formularioVuelo">
+            <label for="vuelo">Selecciona un vuelo:</label>
+            <select id="vuelo">
+              <option value="67000">Vuelo 1 - $67.000</option>
+              <option value="59000">Vuelo 2 - $59.000</option>
+              <option value="90000">Vuelo 3 - $90.000</option>
+              <option value="30000">Vuelo 4 - $30.000</option>
+              <option value="76000">Vuelo 5 - $76.000</option>
+            </select>
+        
+            <label for="fechaReserva">Fecha de reserva:</label>
+            <input type="date" id="fechaReserva">
+        
+            <input type="checkbox" id="vueloVuelta">
+            <label for="vueloVuelta">Reserva de vuelta</label>
+        
+            <button type="button" onclick="calcularDescuento()">Calcular Descuento</button>
+          </form>
+        
+          <div id="resultado"></div>
+    </div>
+    </body>
+</html>
